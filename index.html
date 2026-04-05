@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consent &amp; Care — UH Mānoa PAU Violence Program</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+
+    <!-- ============================
+         HERO SECTION
+         ============================ -->
+    <section class="hero" id="top">
+        <!-- Decorative Background Blobs -->
+        <div class="hero-blob hero-blob--1"></div>
+        <div class="hero-blob hero-blob--2"></div>
+        <div class="hero-blob hero-blob--3"></div>
+
+        <!-- Left Column: Copy -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="bi bi-heart-pulse"></i>
+                UH Mānoa &times; PAU Violence Program
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-title__line hero-title__line--1">Consent</span>
+                <span class="hero-title__line hero-title__line--2">&amp;</span>
+                <span class="hero-title__line hero-title__line--3">Care</span>
+            </h1>
+
+            <p class="hero-author">By Ralph Ramos</p>
+
+            <p class="hero-slogan">"Your body, your voice, your choice &mdash; always."</p>
+
+            <a class="hero-cta" href="#consent">
+                Explore the Guide
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Right Column: Illustrations -->
+        <div class="hero-illustrations">
+            <!-- Cartoon Condom Illustration -->
+            <div class="illust-card illust-card--main">
+                <svg viewBox="0 0 200 280" class="svg-condom" aria-label="Cartoon condom illustration">
+                    <!-- Foil Wrapper -->
+                    <rect x="35" y="8" width="130" height="76" rx="14" fill="#FDE8EE" stroke="#E8547A" stroke-width="2"/>
+                    <path d="M35 48h130" stroke="#F2829D" stroke-width="1" stroke-dasharray="6 4"/>
+                    <text x="100" y="34" text-anchor="middle" fill="#E8547A" font-size="13" font-weight="700" font-family="Figtree, sans-serif">PROTECT</text>
+                    <circle cx="78" cy="64" r="4" fill="#F2829D"/>
+                    <circle cx="100" cy="64" r="4" fill="#E8547A"/>
+                    <circle cx="122" cy="64" r="4" fill="#D4859A"/>
+
+                    <!-- Condom Ring -->
+                    <ellipse cx="100" cy="100" rx="32" ry="9" fill="#FAD4E0" stroke="#E8547A" stroke-width="2"/>
+
+                    <!-- Condom Body -->
+                    <path d="M68 100 C68 100 65 130 65 162 C65 195 82 242 100 248 C118 242 135 195 135 162 C135 130 132 100 132 100"
+                          fill="#F2829D" fill-opacity="0.6" stroke="#E8547A" stroke-width="2"/>
+
+                    <!-- Shine Highlights -->
+                    <path d="M78 122 Q81 112 78 104" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.55"/>
+                    <path d="M84 152 Q86 143 83 136" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+                </svg>
+            </div>
+
+            <!-- Cartoon People Illustration -->
+            <div class="illust-card illust-card--people">
+                <svg viewBox="0 0 180 130" class="svg-people" aria-label="Two cartoon people communicating about consent">
+                    <!-- Person 1 -->
+                    <circle cx="48" cy="32" r="16" fill="#E8547A"/>
+                    <rect x="32" y="52" width="32" height="36" rx="12" fill="#F2829D"/>
+                    <rect x="34" y="88" width="11" height="20" rx="5" fill="#E8547A"/>
+                    <rect x="51" y="88" width="11" height="20" rx="5" fill="#E8547A"/>
+
+                    <!-- Speech Bubble -->
+                    <rect x="72" y="10" width="52" height="28" rx="12" fill="#FDE8EE" stroke="#E8547A" stroke-width="1.5"/>
+                    <polygon points="74,32 64,40 78,34" fill="#FDE8EE" stroke="#E8547A" stroke-width="1.5" stroke-linejoin="round"/>
+                    <text x="98" y="29" text-anchor="middle" fill="#E8547A" font-size="11" font-weight="700" font-family="Figtree, sans-serif">Yes!</text>
+
+                    <!-- Person 2 -->
+                    <circle cx="142" cy="36" r="14" fill="#D4BBDA"/>
+                    <rect x="128" y="54" width="28" height="32" rx="10" fill="#E0CCE5"/>
+                    <rect x="130" y="86" width="10" height="18" rx="4" fill="#D4BBDA"/>
+                    <rect x="146" y="86" width="10" height="18" rx="4" fill="#D4BBDA"/>
+
+                    <!-- Heart Between Them -->
+                    <path d="M95 68 C95 61 103 58 103 65 C103 58 111 61 111 68 C111 75 103 82 103 82 C103 82 95 75 95 68Z" fill="#E8547A" opacity="0.55"/>
+                </svg>
+            </div>
+
+            <!-- Text Accent Card -->
+            <div class="illust-card illust-card--text">
+                <span>Consent.<br>Always.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================
+         TICKER BAR
+         ============================ -->
+    <div class="ticker-wrapper">
+        <div class="ticker">
+            <span class="ticker-item"><span class="ticker-dot"></span>Consent Is Mandatory</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Respect Always</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Your Voice Matters</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Safety First</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Ask, Don't Assume</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>No Means No</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Enthusiastic Yes Only</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Protect &amp; Respect</span>
+            <!-- Duplicate set for seamless infinite scroll -->
+            <span class="ticker-item"><span class="ticker-dot"></span>Consent Is Mandatory</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Respect Always</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Your Voice Matters</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Safety First</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Ask, Don't Assume</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>No Means No</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Enthusiastic Yes Only</span>
+            <span class="ticker-item"><span class="ticker-dot"></span>Protect &amp; Respect</span>
+        </div>
+    </div>
+
+
+    <main>
+
+        <!-- ============================
+             CONSENT — THE FRIES FRAMEWORK
+             ============================ -->
+        <section class="section consent-section" id="consent">
+            <div class="container">
+                <div class="section-tag" data-animate>
+                    <span class="section-tag__line"></span>
+                    The Framework
+                </div>
+                <h2 class="section-title" data-animate>What Is <em>Consent?</em></h2>
+                <p class="section-subtitle" data-animate>
+                    Real consent is built on five non-negotiable pillars. Every one must
+                    be present, every single time.
+                </p>
+
+                <div class="fries-grid">
+                    <div class="fries-card delay-1" data-animate>
+                        <div class="fries-card__letter">F</div>
+                        <div class="fries-card__word">Freely Given</div>
+                        <p class="fries-card__desc">
+                            No pressure, no manipulation, no coercion.
+                            A genuine, unforced choice made without fear of consequences.
+                        </p>
+                    </div>
+                    <div class="fries-card delay-2" data-animate>
+                        <div class="fries-card__letter">R</div>
+                        <div class="fries-card__word">Reversible</div>
+                        <p class="fries-card__desc">
+                            Anyone can change their mind at any point &mdash;
+                            no questions asked. Respect that immediately and completely.
+                        </p>
+                    </div>
+                    <div class="fries-card delay-3" data-animate>
+                        <div class="fries-card__letter">I</div>
+                        <div class="fries-card__word">Informed</div>
+                        <p class="fries-card__desc">
+                            Full honesty is required. Deception, omission,
+                            or hidden intentions invalidate consent entirely.
+                        </p>
+                    </div>
+                    <div class="fries-card delay-4" data-animate>
+                        <div class="fries-card__letter">E</div>
+                        <div class="fries-card__word">Enthusiastic</div>
+                        <p class="fries-card__desc">
+                            Look for a clear, enthusiastic yes &mdash;
+                            not silence, hesitation, or pressure-caving.
+                        </p>
+                    </div>
+                    <div class="fries-card delay-5" data-animate>
+                        <div class="fries-card__letter">S</div>
+                        <div class="fries-card__word">Specific</div>
+                        <p class="fries-card__desc">
+                            Yes to one thing is not yes to everything.
+                            Each activity requires its own separate, clear consent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================
+             STATISTICS
+             ============================ -->
+        <section class="section stats-section" id="stats">
+            <div class="container">
+                <div class="section-tag section-tag--light" data-animate>
+                    <span class="section-tag__line section-tag__line--light"></span>
+                    By the Numbers
+                </div>
+                <h2 class="section-title section-title--light" data-animate>
+                    Why This <em>Matters</em>
+                </h2>
+                <p class="section-subtitle section-subtitle--light" data-animate>
+                    Understanding the reality helps us build a safer,
+                    more respectful campus community.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card delay-1" data-animate>
+                        <i class="bi bi-heart-pulse stat-card__icon"></i>
+                        <div class="stat-card__number">
+                            <span class="counter" data-target="1">0</span> in 5
+                        </div>
+                        <p class="stat-card__label">
+                            college women experience sexual assault during their time on campus
+                        </p>
+                    </div>
+                    <div class="stat-card delay-2" data-animate>
+                        <i class="bi bi-people stat-card__icon"></i>
+                        <div class="stat-card__number">
+                            <span class="counter" data-target="90">0</span>%
+                        </div>
+                        <p class="stat-card__label">
+                            of victims personally know their attacker beforehand
+                        </p>
+                    </div>
+                    <div class="stat-card delay-3" data-animate>
+                        <i class="bi bi-calendar-check stat-card__icon"></i>
+                        <div class="stat-card__number">
+                            <span class="counter" data-target="63">0</span>%
+                        </div>
+                        <p class="stat-card__label">
+                            of new STI cases occur among people aged 15 to 24
+                        </p>
+                    </div>
+                    <div class="stat-card delay-4" data-animate>
+                        <i class="bi bi-shield-check stat-card__icon"></i>
+                        <div class="stat-card__number">
+                            <span class="counter" data-target="98">0</span>%
+                        </div>
+                        <p class="stat-card__label">
+                            condom effectiveness rate when used correctly every time
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================
+             MYTHS VS. FACTS
+             ============================ -->
+        <section class="section myths-section" id="myths">
+            <div class="container">
+                <div class="section-tag" data-animate>
+                    <span class="section-tag__line"></span>
+                    Know the Truth
+                </div>
+                <h2 class="section-title" data-animate>Myths vs. <em>Facts</em></h2>
+                <p class="section-subtitle" data-animate>
+                    Misinformation can be harmful. Here is the truth behind
+                    common misconceptions about sex, consent, and protection.
+                </p>
+
+                <div class="myths-grid">
+                    <div class="myth-card delay-1" data-animate>
+                        <div class="myth-card__label myth-card__label--myth">
+                            <i class="bi bi-x-circle"></i> Myth
+                        </div>
+                        <p class="myth-card__text">
+                            "If they didn't say no, that means it's a yes."
+                        </p>
+                        <div class="myth-card__divider"></div>
+                        <div class="myth-card__label myth-card__label--fact">
+                            <i class="bi bi-check-circle"></i> Fact
+                        </div>
+                        <p class="myth-card__text">
+                            Silence is never consent. Only a clear, enthusiastic "yes"
+                            counts. If someone is unsure, frozen, or quiet &mdash; stop and check in.
+                        </p>
+                    </div>
+
+                    <div class="myth-card delay-2" data-animate>
+                        <div class="myth-card__label myth-card__label--myth">
+                            <i class="bi bi-x-circle"></i> Myth
+                        </div>
+                        <p class="myth-card__text">
+                            "Condoms ruin the experience."
+                        </p>
+                        <div class="myth-card__divider"></div>
+                        <div class="myth-card__label myth-card__label--fact">
+                            <i class="bi bi-check-circle"></i> Fact
+                        </div>
+                        <p class="myth-card__text">
+                            Modern condoms are ultra-thin and come in many varieties. The
+                            peace of mind from being protected actually enhances the experience.
+                        </p>
+                    </div>
+
+                    <div class="myth-card delay-3" data-animate>
+                        <div class="myth-card__label myth-card__label--myth">
+                            <i class="bi bi-x-circle"></i> Myth
+                        </div>
+                        <p class="myth-card__text">
+                            "You can tell if someone has an STI just by looking."
+                        </p>
+                        <div class="myth-card__divider"></div>
+                        <div class="myth-card__label myth-card__label--fact">
+                            <i class="bi bi-check-circle"></i> Fact
+                        </div>
+                        <p class="myth-card__text">
+                            Most STIs show zero visible symptoms. The only way to know
+                            your status is through testing. Regular screening protects everyone.
+                        </p>
+                    </div>
+
+                    <div class="myth-card delay-4" data-animate>
+                        <div class="myth-card__label myth-card__label--myth">
+                            <i class="bi bi-x-circle"></i> Myth
+                        </div>
+                        <p class="myth-card__text">
+                            "Consent once means consent every time."
+                        </p>
+                        <div class="myth-card__divider"></div>
+                        <div class="myth-card__label myth-card__label--fact">
+                            <i class="bi bi-check-circle"></i> Fact
+                        </div>
+                        <p class="myth-card__text">
+                            Consent must be given every single time, for every activity.
+                            Past agreement never carries over. People can and do change their minds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================
+             LATEX BARRIERS
+             ============================ -->
+        <section class="section barriers-section" id="protection">
+            <div class="container">
+                <div class="section-tag" data-animate>
+                    <span class="section-tag__line"></span>
+                    Protection Methods
+                </div>
+                <h2 class="section-title" data-animate>Latex <em>Barriers</em></h2>
+                <p class="section-subtitle" data-animate>
+                    Using a barrier is an act of care &mdash; for yourself and your
+                    partner. Here are the options available to you.
+                </p>
+
+                <div class="barriers-layout">
+                    <!-- Left: Cartoon Illustrations -->
+                    <div class="barriers-visuals" data-animate>
+                        <!-- External Condom Illustration -->
+                        <div class="barrier-visual">
+                            <svg viewBox="0 0 200 220" aria-label="Cartoon external condom">
+                                <rect x="40" y="6" width="120" height="66" rx="12" fill="#FDE8EE" stroke="#E8547A" stroke-width="2"/>
+                                <path d="M40 40h120" stroke="#F2829D" stroke-width="1" stroke-dasharray="5 3"/>
+                                <text x="100" y="28" text-anchor="middle" fill="#E8547A" font-size="11" font-weight="700" font-family="Figtree, sans-serif">EXTERNAL</text>
+                                <circle cx="78" cy="54" r="3.5" fill="#F2829D"/>
+                                <circle cx="100" cy="54" r="3.5" fill="#E8547A"/>
+                                <circle cx="122" cy="54" r="3.5" fill="#D4859A"/>
+                                <ellipse cx="100" cy="84" rx="30" ry="8" fill="#FAD4E0" stroke="#E8547A" stroke-width="2"/>
+                                <path d="M70 84 C70 84 67 110 67 138 C67 168 82 200 100 206 C118 200 133 168 133 138 C133 110 130 84 130 84"
+                                      fill="#F2829D" fill-opacity="0.55" stroke="#E8547A" stroke-width="2"/>
+                                <path d="M78 105 Q81 96 78 88" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+                            </svg>
+                            <span class="barrier-visual__label">External Condom</span>
+                        </div>
+
+                        <!-- Internal Condom Illustration -->
+                        <div class="barrier-visual">
+                            <svg viewBox="0 0 200 220" aria-label="Cartoon internal condom">
+                                <ellipse cx="100" cy="36" rx="44" ry="18" fill="#FDE8EE" stroke="#E8547A" stroke-width="2"/>
+                                <path d="M56 36 v112 C56 172 76 192 100 192 C124 192 144 172 144 148 V36"
+                                      fill="#F2829D" fill-opacity="0.45" stroke="#E8547A" stroke-width="2"/>
+                                <circle cx="100" cy="180" r="14" fill="#FAD4E0" stroke="#E8547A" stroke-width="2"/>
+                                <path d="M72 36v144 M128 36v144" stroke="#E8547A" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.35"/>
+                                <path d="M66 74 Q70 64 67 56" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+                            </svg>
+                            <span class="barrier-visual__label">Internal Condom</span>
+                        </div>
+
+                        <!-- Campus Availability Banner -->
+                        <div class="barrier-visual barrier-visual--wide">
+                            <div class="barrier-visual__banner">
+                                <i class="bi bi-geo-alt"></i>
+                                Free at UH Mānoa Health Services &mdash; No Questions Asked
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Detailed List -->
+                    <div class="barriers-details" data-animate>
+                        <div class="barrier-item">
+                            <div class="barrier-item__icon">
+                                <i class="bi bi-shield-plus"></i>
+                            </div>
+                            <div class="barrier-item__content">
+                                <h4 class="barrier-item__title">External (Male) Condom</h4>
+                                <p class="barrier-item__desc">
+                                    Up to 98% effective when used correctly. Protects against
+                                    both STIs and pregnancy. Available free at campus health
+                                    services &mdash; just walk in and ask.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="barrier-item">
+                            <div class="barrier-item__icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="barrier-item__content">
+                                <h4 class="barrier-item__title">Internal (Female) Condom</h4>
+                                <p class="barrier-item__desc">
+                                    Over 95% effective. Can be inserted up to 8 hours before
+                                    sex, giving the wearer more autonomy and control over their
+                                    own protection.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="barrier-item">
+                            <div class="barrier-item__icon">
+                                <i class="bi bi-layers"></i>
+                            </div>
+                            <div class="barrier-item__content">
+                                <h4 class="barrier-item__title">Dental Dam</h4>
+                                <p class="barrier-item__desc">
+                                    A thin latex or polyurethane sheet for oral-vaginal or
+                                    oral-anal contact. Significantly reduces STI transmission
+                                    risk during oral sex.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="barrier-item">
+                            <div class="barrier-item__icon">
+                                <i class="bi bi-hand-index-thumb"></i>
+                            </div>
+                            <div class="barrier-item__content">
+                                <h4 class="barrier-item__title">Latex / Nitrile Gloves</h4>
+                                <p class="barrier-item__desc">
+                                    Used during manual stimulation to reduce STI transmission
+                                    through cuts, hangnails, or direct skin contact. Simple
+                                    but effective.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================
+             TIPS — HOW TO TALK ABOUT IT
+             ============================ -->
+        <section class="section tips-section" id="tips">
+            <div class="container">
+                <div class="section-tag" data-animate>
+                    <span class="section-tag__line"></span>
+                    Practical Guidance
+                </div>
+                <h2 class="section-title" data-animate>How to <em>Talk About It</em></h2>
+                <p class="section-subtitle" data-animate>
+                    Not sure what to say? Here are real phrases and practices that
+                    build trust, respect, and healthier connections.
+                </p>
+
+                <div class="tips-grid">
+                    <div class="tip-card delay-1" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-chat-heart"></i>
+                        </div>
+                        <h4 class="tip-card__title">Start the Conversation</h4>
+                        <p class="tip-card__body">
+                            Try saying: "Before things go further, I want to make sure
+                            we're both comfortable." Opening up shows maturity, not weakness.
+                        </p>
+                    </div>
+
+                    <div class="tip-card delay-2" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h4 class="tip-card__title">Check In Often</h4>
+                        <p class="tip-card__body">
+                            Ask: "Is this still okay?" or "Do you want to keep going?"
+                            Consent is not a one-time checkbox &mdash; it is an ongoing conversation.
+                        </p>
+                    </div>
+
+                    <div class="tip-card delay-3" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-shield-plus"></i>
+                        </div>
+                        <h4 class="tip-card__title">Bring Up Protection</h4>
+                        <p class="tip-card__body">
+                            Say: "I'd feel better if we used protection &mdash; I brought some."
+                            Normalizing barrier use shows care for both of you.
+                        </p>
+                    </div>
+
+                    <div class="tip-card delay-4" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-pause-circle"></i>
+                        </div>
+                        <h4 class="tip-card__title">Honor the Pause</h4>
+                        <p class="tip-card__body">
+                            "I'm not ready for that &mdash; can we slow down?" is always valid.
+                            A respectful partner will never pressure you past your boundary.
+                        </p>
+                    </div>
+
+                    <div class="tip-card delay-5" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-clipboard2-pulse"></i>
+                        </div>
+                        <h4 class="tip-card__title">Get Tested Together</h4>
+                        <p class="tip-card__body">
+                            Suggest: "Let's get tested together &mdash; it's just being
+                            responsible." UH Mānoa offers free, confidential STI testing.
+                        </p>
+                    </div>
+
+                    <div class="tip-card delay-1" data-animate>
+                        <div class="tip-card__icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h4 class="tip-card__title">Be an Active Bystander</h4>
+                        <p class="tip-card__body">
+                            If you see someone uncomfortable at a party or gathering,
+                            step in. Check on friends. Help build a culture of genuine care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================
+             QUOTE BAND
+             ============================ -->
+        <div class="quote-band">
+            <p class="quote-band__text" data-animate>
+                "Respect isn't optional &mdash; it is the foundation of every healthy,
+                joyful connection."
+            </p>
+            <p class="quote-band__source" data-animate>
+                UH Mānoa PAU Violence Prevention Program
+            </p>
+        </div>
+
+
+        <!-- ============================
+             CAMPUS RESOURCES
+             ============================ -->
+        <section class="section resources-section" id="resources">
+            <div class="container">
+                <div class="section-tag" data-animate>
+                    <span class="section-tag__line"></span>
+                    Get Support
+                </div>
+                <h2 class="section-title" data-animate>Campus <em>Resources</em></h2>
+                <p class="section-subtitle" data-animate>
+                    You are never alone. These campus and national resources are
+                    here to support, educate, and empower you.
+                </p>
+
+                <div class="resources-grid">
+                    <div class="resource-card delay-1" data-animate>
+                        <div class="resource-card__icon">
+                            <i class="bi bi-hospital"></i>
+                        </div>
+                        <h4 class="resource-card__name">Student Health Services</h4>
+                        <p class="resource-card__desc">
+                            Free STI testing, contraception, and confidential health
+                            support available to all UH Mānoa students.
+                        </p>
+                    </div>
+
+                    <div class="resource-card delay-2" data-animate>
+                        <div class="resource-card__icon">
+                            <i class="bi bi-shield-shaded"></i>
+                        </div>
+                        <h4 class="resource-card__name">PAU Violence Program</h4>
+                        <p class="resource-card__desc">
+                            On-campus confidential advocacy, prevention education,
+                            and survivor support services.
+                        </p>
+                    </div>
+
+                    <div class="resource-card delay-3" data-animate>
+                        <div class="resource-card__icon">
+                            <i class="bi bi-telephone-inbound"></i>
+                        </div>
+                        <h4 class="resource-card__name">RAINN Hotline</h4>
+                        <p class="resource-card__desc">
+                            1-800-656-HOPE (4673) &mdash; 24/7 free, confidential support
+                            for survivors of sexual violence.
+                        </p>
+                    </div>
+
+                    <div class="resource-card delay-4" data-animate>
+                        <div class="resource-card__icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h4 class="resource-card__name">Counseling Services</h4>
+                        <p class="resource-card__desc">
+                            Free mental health counseling and emotional wellness support
+                            for all registered UH Mānoa students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================
+         FOOTER
+         ============================ -->
+    <footer class="footer">
+        <div class="footer__logo">Consent &amp; Care &mdash; UH Mānoa</div>
+        <div class="footer__divider"></div>
+        <p class="footer__text">
+            Created in collaboration with the UH Mānoa PAU Violence Prevention Program.<br>
+            Promoting consensual, respectful, and safer sexual health for all students.<br>
+            <em>"Your body, your voice, your choice &mdash; always."</em>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
